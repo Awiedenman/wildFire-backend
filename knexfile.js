@@ -4,10 +4,13 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: {
-    postgres: 'postgres://localhost/wildfire'
+    connection: 'postgres://localhost/wildfire',
+    migrations: {
+      directory: './migrations'
+    },
+    useNullAsDefault: true
     }
   }
-}
+
 
  
